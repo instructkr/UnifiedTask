@@ -1,18 +1,18 @@
-# AutoTaskTransfer (Under Construction)
+# UnifiedTask (Under Construction)
 
-AutoTaskTransfer is a Python package for automatic task transfer in neural networks using diff-based techniques.
+UnifiedTask is a Python package for automatic task transfer in neural networks using diff-based techniques.
 This approach is conceived by [Jeonghwan Park (maywell)](https://github.com/StableFluffy), the main committer of InstructKR.
 
 ## Learn More
 * You can check the example of ipynb here: https://github.com/StableFluffy/EasyLLMFeaturePorter
 
 ## Installation
-`pip install AutoTaskTransfer`
+`pip install UnifiedTask`
 
 
 ```python
-from AutoTaskTransfer.diff_transfer import calculate_model_diffs, calculate_sigmoid_ratios, apply_model_diffs
-from AutoTaskTransfer.models.llama import load_llama_model
+from UnifiedTask.diff_transfer import calculate_model_diffs, calculate_sigmoid_ratios, apply_model_diffs
+from UnifiedTask.models.llama import load_llama_model
 
 informative_model = load_llama_model("gradientai/Llama-3-8B-Instruct-262k")
 base_model = load_llama_model("kuotient/Meta-Llama-3-8B-Instruct")
